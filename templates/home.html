@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YASH VYAS PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_home.css') }}">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="hero">
+        <a href="{{ url_for('home') }}">
+            <img class="image" src="{{ url_for('static', filename='images/yash_logo.png') }}" alt="Logo">
+        </a>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="section">
+        <div class="container">
+            <div class="my_avatar">
+                <img class="my_avatar_photo" src="{{ url_for('static', filename='images/profile_photo.jpg') }}" alt="Yash Vyas smiling at the camera.">
+            </div>
+            <div class="content">
+                <h1 class="name">Yash Vyas</h1>
+                <h3 class="brief-about">Data Scientist | Sports Enthusiast</h3>
+                <!-- Social Links Column -->
+                <div id="social-links" class="social-links">
+                    <a href="https://www.linkedin.com/in/yashhvyass/" target="_blank" rel="noopener noreferrer">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/mgampcwp.json"
+                            trigger="hover"
+                            colors="primary:#121331,secondary:#30c9e8,tertiary:#ebe6ef"
+                            style="width:40px;height:40px">
+                        </lord-icon>
+                    </a>
+                    <a href="https://www.github.com/yashsvyass/" target="_blank" rel="noopener noreferrer">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/yedgackm.json"
+                            trigger="hover"
+                            colors="primary:#109121,secondary:#ffffff,tertiary:#109121"
+                            style="width:40px;height:40px">
+                        </lord-icon>
+                    </a>
+                    <a href="https://www.kaggle.com/yashhvyass/" target="_blank" rel="noopener noreferrer">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/ofcynlwa.json"
+                            trigger="hover"
+                            colors="primary:#121131,secondary:#b4b4b4,tertiary:#b4b4b4,quaternary:#b4b4b4"
+                            style="width:40px;height:40px">
+                        </lord-icon>
+                    </a>
+                    <a href="mailto:yashhvyass@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/nqisoomz.json"
+                            trigger="hover"
+                            colors="primary:#121331,secondary:#ebe6ef,tertiary:#e83a30,quaternary:#3a3347"
+                            style="width:50px;height:50px">
+                        </lord-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <a href="#education" title="Education">
+            <lord-icon
+                src="https://cdn.lordicon.com/lenjvibx.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#ffffff"
+                style="width:25px;height:25px">
+            </lord-icon>
+        </a>
+        <a href="#experience" title="Experience">
+            <lord-icon
+                src="https://cdn.lordicon.com/qmsejndz.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#ffffff"
+                style="width:25px;height:25px">
+            </lord-icon>
+        </a>
+        <a href="#projects" title="Projects">
+            <lord-icon
+                src="https://cdn.lordicon.com/vlycxjwx.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#ffffff"
+                style="width:25px;height:25px">
+            </lord-icon>
+        </a>
+        <a href="#skills" title="Skills">
+            <lord-icon
+                src="https://cdn.lordicon.com/jdalicnn.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#ffffff"
+                style="width:25px;height:25px">
+            </lord-icon>
+        </a>
+        <a href="#honors" title="Honors">
+            <lord-icon
+                src="https://cdn.lordicon.com/gedfcmxx.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#ffffff"
+                style="width:25px;height:25px">
+            </lord-icon>
+        </a>
+        <a href="#resume" title="Resume">
+            <lord-icon
+                src="https://cdn.lordicon.com/wzwygmng.json"
+                trigger="hover"
+                state="hover-unfold"
+                colors="primary:#ffffff,secondary:#ffffff"
+                style="width:25px;height:25px">
+            </lord-icon>
+        </a>
+        <a href="#contact" title="Contact">
+            <lord-icon
+                src="https://cdn.lordicon.com/ebjjjrhp.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#ffffff"
+                style="width:25px;height:25px">
+            </lord-icon>
+        </a>
+    </nav>
+
+    <!-- Education & Experience -->
+    <div class="container_edu">
+        <section class="col" id="education">
+            <header class="title"> 
+                <h1><lord-icon
+                    src="https://cdn.lordicon.com/lenjvibx.json"
+                    trigger="hover"
+                    colors="primary:#ffffff,secondary:#ffffff"
+                    style="width:50px;height:50px">
+                </lord-icon> EDUCATION</h1>
+            </header>
+            <div class="contents">
+                <div class="box">
+                    <h2><b>Indiana University Bloomington</b></h2>
+                    <h3><i>Masters of Science in Data Science</i></h3>
+                    <h4>(Aug 2024 - May 2026)</h4>
+                </div>
+
+                <div class="box">
+                    <h2><b>Vellore Institute of Technology</b></h2>
+                    <h3><i>Bachelors of Technology in Computer Science</i></h3>
+                    <h4>(Aug 2017 - May 2021)</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="col" id="experience">
+            <header class="title"> 
+                <h1><lord-icon
+                    src="https://cdn.lordicon.com/qmsejndz.json"
+                    trigger="hover"
+                    colors="primary:#ffffff,secondary:#ffffff"
+                    style="width:50px;height:50px">
+                </lord-icon> EXPERIENCE</h1>
+            </header>
+            <div class="contents">
+                <div class="box">
+                    <h2><b>Signify (Philips Lighting)</b></h2>
+                    <h3><i>Data Scientist</i></h3>
+                    <h4>(July 2021 - July 2024)</h4>
+                </div>
+
+                <div class="box">
+                    <h2><b>Signify (Philips Lighting)</b></h2>
+                    <h3><i>Data Science Intern</i></h3>
+                    <h4>(Feb 2021 - July 2021)</h4>
+                </div>
+
+                <div class="box">
+                    <h2><b>KPMG</b></h2>
+                    <h3><i>Data Analytics Intern</i></h3>
+                    <h4>(Feb 2021 - July 2021)</h4>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+        <header class="projectheader">
+            <h1>
+                <lord-icon
+                    src="https://cdn.lordicon.com/vlycxjwx.json"
+                    trigger="hover"
+                    colors="primary:#ffffff,secondary:#ffffff"
+                    style="width:50px;height:50px">
+                </lord-icon> 
+                PROJECTS
+            </h1>
+        </header>
+        <div class="project-container">
+            <div class="project-card">
+                <h5>Project 1</h5>
+                <p>Details about project 1...</p>
+            </div>
+            <div class="project-card">
+                <h5>Project 2</h5>
+                <p>Details about project 2...</p>
+            </div>
+            <div class="project-card">
+                <h5>Project 3</h5>
+                <p>Details about project 3...</p>
+            </div>
+            <div class="project-card">
+                <h5>Project 4</h5>
+                <p>Details about project 4...</p>
+            </div>
+            <div class="project-card">
+                <h5>Project 5</h5>
+                <p>Details about project 5...</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills and Honors -->
+    <div class="container_skills">
+        <section class="skill_col" id="skills">
+            <header class="skills">
+                <h1><lord-icon
+                    src="https://cdn.lordicon.com/jdalicnn.json"
+                    trigger="hover"
+                    colors="primary:#ffffff,secondary:#ffffff"
+                    style="width:50px;height:50px">
+                </lord-icon> SKILLS</h1>
+            </header>
+            <div class="skill_content">
+                <div class="container_skills_2">
+                    <div class="skill_box">
+                        <img class="database_image" src="{{ url_for('static', filename='images/database.png') }}">
+                        <h2><b>Database Management System</b></h2>
+                        <h3><i>MySQL/MongoDB</i></h3>
+                    </div>
+
+                    <div class="skill_box">
+                        <img class="languages_image" src="{{ url_for('static', filename='images/python.png') }}">
+                        <h2><b>Languages</b></h2>
+                        <h3><i>Python/R/Java</i></h3>
+                    </div>
+
+                    <div class="skill_box">
+                        <img class="deeplearning_image" src="{{ url_for('static', filename='images/deep_learning.png') }}">
+                        <h2><b>Machine Learning</b></h2>
+                        <h3><i>Sklearn/Pytorch</i></h3>
+                    </div>
+                    <div class="skill_box">
+                        <img class="web_image" src="{{ url_for('static', filename='images/web.png') }}">
+                        <h2><b>Web Development</b></h2>
+                        <h3><i>HTML/CSS/Javascript/Flask</i></h3>
+                    </div>
+
+                    <div class="skill_box">
+                        <img class="platforms_image" src="{{ url_for('static', filename='images/cloud.png') }}">
+                        <h2><b>Data/ML Platforms</b></h2>
+                        <h3><i>Snowflake/AWS</i></h3>
+                    </div>
+
+                    <div class="skill_box">
+                        <img class="visualize_image" src="{{ url_for('static', filename='images/visualize.png') }}">
+                        <h2><b>Data Visualization Platforms</b></h2>
+                        <h3><i>PowerBI/Tableau</i></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skill_col" id="honors">
+            <header class="honors"> 
+                <h1><lord-icon
+                    src="https://cdn.lordicon.com/gedfcmxx.json"
+                    trigger="hover"
+                    colors="primary:#ffffff,secondary:#ffffff"
+                    style="width:50px;height:50px">
+                </lord-icon> HONORS</h1>
+            </header>
+            <div class="honors_content">
+                <div class="honors_box">
+                    <h2><b>Finalist Leaf Classification Challenge</b></h2>
+                    <h3><i>Organized by MachineHack</i></h3>
+                </div>
+
+                <div class="honors_box">
+                    <h2><b>Member Cricket Team</b></h2>
+                    <h3><i>Represented our college at National Level Cricket Competition</i></h3>
+                </div>
+
+                <div class="honors_box">
+                    <h2><b>Top 10% in JLT India Challenge</b></h2>
+                    <h3><i>Organized by IIT Bombay</i></h3>
+                </div>
+
+                <div class="honors_box">
+                    <h2><b>Best Performer</b></h2>
+                    <h3><i>Signify</i></h3>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Resume -->
+    <section class="resume" id="resume">
+        <header class="resumeheader">
+            <h1><lord-icon
+                src="https://cdn.lordicon.com/wzwygmng.json"
+                trigger="hover"
+                state="hover-unfold"
+                colors="primary:#ffffff,secondary:#ffffff"
+                style="width:50px;height:50px">
+            </lord-icon> RESUME</h1>
+        </header>
+        <a href="static\images\Yash_Resume.pdf" class="resume-download" download>
+            <span>Download Resume</span>
+        </a>
+    </section>
+    
+    <!-- Contact -->
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <header class="getintouch">
+            <h1><lord-icon
+                    src="https://cdn.lordicon.com/ebjjjrhp.json"
+                    trigger="hover"
+                    colors="primary:#ffffff,secondary:#ffffff"
+                    style="width:50px;height:50px">
+                </lord-icon> CONTACT</h1>
+        </header>
+        
+        <!-- Links Column Below Header -->
+        <div class="links">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/yashhvyass/" target="_blank" rel="noopener noreferrer"><lord-icon
+                    src="https://cdn.lordicon.com/mgampcwp.json"
+                    trigger="hover"
+                    colors="primary:#121331,secondary:#30c9e8,tertiary:#ebe6ef"
+                    style="width:40px;height:40px">
+                </lord-icon></a></li>
+                <li><a href="https://www.github.com/yashsvyass/" target="_blank" rel="noopener noreferrer"><lord-icon
+                    src="https://cdn.lordicon.com/yedgackm.json"
+                    trigger="hover"
+                    colors="primary:#109121,secondary:#ffffff,tertiary:#109121"
+                    style="width:40px;height:40px">
+                </lord-icon></a></li>
+                <li><a href="https://www.kaggle.com/yashhvyass/" target="_blank" rel="noopener noreferrer"><lord-icon
+                    src="https://cdn.lordicon.com/ofcynlwa.json"
+                    trigger="hover"
+                    colors="primary:#121131,secondary:#b4b4b4,tertiary:#b4b4b4,quaternary:#b4b4b4"
+                    style="width:40px;height:40px">
+                </lord-icon></a></li>
+                <li><a href="mailto:yashhvyass@gmail.com" target="_blank" rel="noopener noreferrer"><lord-icon
+                    src="https://cdn.lordicon.com/nqisoomz.json"
+                    trigger="hover"
+                    colors="primary:#121331,secondary:#ebe6ef,tertiary:#e83a30,quaternary:#3a3347"
+                    style="width:50px;height:50px">
+                </lord-icon></a></li>
+            </ul>
+        </div>
+
+        <div class="bottom">
+            &copy; 2024 Yash Vyas | Designed by Yash Vyas
+        </div>
+    </section>
+
+
+
+    <script src="{{ url_for('static', filename='images/vanilla-tilt.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</body>
+</html>
