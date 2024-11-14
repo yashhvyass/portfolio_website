@@ -1,14 +1,14 @@
 /* Global Styles */
+/* 161A30 */
 body {
-    background-color: #161A30;
+    background-color: #2E3B4E; /* Dark blue background */
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
     font-size: small;
-    color: #F0ECE5;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+    color: #F0ECE5; /* Light cream text color */
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
