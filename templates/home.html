@@ -188,7 +188,6 @@
         </section>
     </div>
 
-    <!-- Projects -->
     <section class="section" id="projects">
         <header class="projectheader">
             <h1>
@@ -203,24 +202,60 @@
         </header>
         <div class="project-container">
             <div class="project-card">
-                <h5>Project 1</h5>
-                <p>Details about project 1...</p>
+                <img src="{{ url_for('static', filename='images/genai.png') }}" alt="FarmEasy Project" class="project-image">
+                <h5>FarmEasy</h5>
+                <p>FarmEasy is an AI-powered platform...</p>
+                <a href="https://github.com/yashhvyass/FarmEasy" class="github-link" target="_blank">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/yedgackm.json"
+                        trigger="hover"
+                        colors="primary:#109121,secondary:#ffffff,tertiary:#109121"
+                        style="width:30px;height:30px">
+                    </lord-icon>
+                    View on GitHub
+                </a>
             </div>
             <div class="project-card">
-                <h5>Project 2</h5>
-                <p>Details about project 2...</p>
+                <img src="{{ url_for('static', filename='images/nlp.png') }}" alt="Textly Project" class="project-image">
+                <h5>Textly</h5>
+                <p>Textly is an advanced text paraphrasing...</p>
+                <a href="https://github.com/yashhvyass/Textly" class="github-link" target="_blank">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/yedgackm.json"
+                        trigger="hover"
+                        colors="primary:#109121,secondary:#ffffff,tertiary:#109121"
+                        style="width:30px;height:30px">
+                    </lord-icon>
+                    View on GitHub
+                </a>
             </div>
             <div class="project-card">
-                <h5>Project 3</h5>
-                <p>Details about project 3...</p>
+                <img src="{{ url_for('static', filename='images/vision.png') }}" alt="No Brainer Project" class="project-image">
+                <h5>No Brainer</h5>
+                <p>No Brainer is a Flask-based web...</p>
+                <a href="https://github.com/yashhvyass/No_Brainer" class="github-link" target="_blank">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/yedgackm.json"
+                        trigger="hover"
+                        colors="primary:#109121,secondary:#ffffff,tertiary:#109121"
+                        style="width:30px;height:30px">
+                    </lord-icon>
+                    View on GitHub
+                </a>
             </div>
             <div class="project-card">
-                <h5>Project 4</h5>
-                <p>Details about project 4...</p>
-            </div>
-            <div class="project-card">
-                <h5>Project 5</h5>
-                <p>Details about project 5...</p>
+                <img src="{{ url_for('static', filename='images/ml.png') }}" alt="MoneyBall Project" class="project-image">
+                <h5>MoneyBall</h5>
+                <p>Predict how many home runs your...</p>
+                <a href="https://github.com/yashhvyass/MoneyBall" class="github-link" target="_blank">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/yedgackm.json"
+                        trigger="hover"
+                        colors="primary:#109121,secondary:#ffffff,tertiary:#109121"
+                        style="width:30px;height:30px">
+                    </lord-icon>
+                    View on GitHub
+                </a>
             </div>
         </div>
     </section>
@@ -242,7 +277,7 @@
                     <div class="skill_box">
                         <img class="database_image" src="{{ url_for('static', filename='images/database.png') }}">
                         <h2><b>Database Management System</b></h2>
-                        <h3><i>MySQL/MongoDB</i></h3>
+                        <h3><i>MySQL/PostgreSQL/MongoDB/Vector Databases</i></h3>
                     </div>
 
                     <div class="skill_box">
@@ -254,7 +289,7 @@
                     <div class="skill_box">
                         <img class="deeplearning_image" src="{{ url_for('static', filename='images/deep_learning.png') }}">
                         <h2><b>Machine Learning</b></h2>
-                        <h3><i>Sklearn/Pytorch</i></h3>
+                        <h3><i>Sklearn/Pytorch/Tensorflow</i></h3>
                     </div>
                     <div class="skill_box">
                         <img class="web_image" src="{{ url_for('static', filename='images/web.png') }}">
@@ -271,7 +306,12 @@
                     <div class="skill_box">
                         <img class="visualize_image" src="{{ url_for('static', filename='images/visualize.png') }}">
                         <h2><b>Data Visualization Platforms</b></h2>
-                        <h3><i>PowerBI/Tableau</i></h3>
+                        <h3><i>PowerBI/Tableau/Streamlit</i></h3>
+                    </div>
+                    <div class="skill_box">
+                        <img class="genai_image" src="{{ url_for('static', filename='images/visualize.png') }}">
+                        <h2><b>Gen AI</b></h2>
+                        <h3><i>Open AI/Mistral/Langchain</i></h3>
                     </div>
                 </div>
             </div>
@@ -288,23 +328,24 @@
             </header>
             <div class="honors_content">
                 <div class="honors_box">
+                    <h2><b>Finalist 2024 Agrinovus Technology Innovation Challenge</b></h2>
+                    <h3><i>Organized by Agrinovus (IUB)</i></h3>
+                </div>
+                <div class="honors_box">
                     <h2><b>Finalist Leaf Classification Challenge</b></h2>
                     <h3><i>Organized by MachineHack</i></h3>
                 </div>
-
                 <div class="honors_box">
-                    <h2><b>Member Cricket Team</b></h2>
-                    <h3><i>Represented our college at National Level Cricket Competition</i></h3>
+                    <h2><b>Best Performer</b></h2>
+                    <h3><i>Signify</i></h3>
                 </div>
-
                 <div class="honors_box">
                     <h2><b>Top 10% in JLT India Challenge</b></h2>
                     <h3><i>Organized by IIT Bombay</i></h3>
                 </div>
-
                 <div class="honors_box">
-                    <h2><b>Best Performer</b></h2>
-                    <h3><i>Signify</i></h3>
+                    <h2><b>Member Cricket Team</b></h2>
+                    <h3><i>Represented our college at National Level Cricket Competition</i></h3>
                 </div>
             </div>
         </section>
