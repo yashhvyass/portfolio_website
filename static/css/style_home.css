@@ -1,11 +1,12 @@
 /* Global Styles */
 /* 161A30 */
 body {
-    background-color: #2E3B4E; /* Dark blue background */
-    margin: 0;
-    font-family: 'Noto Sans', sans-serif;
+    background-color: hsl(0, 0%, 99%); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Aptos'; /* Clean font */
     font-size: small;
-    color: #F0ECE5; /* Light cream text color */
+    color: rgb(59, 84, 102); /* White text for contrast */
     overflow-x: hidden;
     box-sizing: border-box;
 }
@@ -17,12 +18,13 @@ body {
 
 /* Header Styles */
 .hero {
+    background-image: url('../static/images/background_2.png');
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 60px;
+    height: 100%;
 }
 
 .image {
@@ -112,7 +114,7 @@ body {
     width: 100%;
     max-width: 400px;
     height: 350px;
-    border-radius: 40%;
+    border-radius: 100%;
 }
 
 .content {
@@ -122,7 +124,7 @@ body {
 .content h2,
 .content h1,
 .content h3.brief-about {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Aptos';
     margin: 0;
     font-size: large; /* Font size updated to large */
 }
@@ -180,7 +182,7 @@ body {
 /* Project Header Styles */
 .section .projectheader {
     font-family: Arial, Helvetica, sans-serif;
-    color: #86B6F6;
+    color: #375378;
     font-size: large;
     padding: 10px;
     margin-bottom: 40px;
@@ -214,7 +216,8 @@ body {
 }
 
 .project-container::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(130, 6, 6, 0.1);
+    color: #555;
     border-radius: 10px;
 }
 
@@ -241,7 +244,7 @@ body {
     gap: 15px;
     transition: all 0.3s ease;
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(22, 21, 21, 0.1);
 }
 
 .project-card:hover {
@@ -269,7 +272,7 @@ body {
     margin: 0;
     font-size: 1.4rem;
     font-weight: 600;
-    color: #86B6F6;
+    color: #375378; /* Darker color for better visibility */
 }
 
 /* Project Description Styles */
@@ -277,7 +280,7 @@ body {
     margin: 0;
     font-size: 0.95rem;
     line-height: 1.5;
-    color: #F0ECE5;
+    color: #333; /* Darker color for better contrast */
     flex-grow: 1;
 }
 
@@ -286,19 +289,19 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #F0ECE5;
+    color: #375378; /* Updated for better visibility */
     text-decoration: none;
     font-size: 0.9rem;
     padding: 10px 15px;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.3); /* Lightened background */
     transition: all 0.3s ease;
     margin-top: auto;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .github-link:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.4);
     transform: translateX(5px);
 }
 
@@ -366,13 +369,14 @@ body {
     }
 
     .project-image {
-        height: 130px;
+        height: 80px;
     }
 
     .section .projectheader h1 {
         font-size: 1.75rem;
     }
 }
+
 /* Education and Experience Section Styles */
 .container_edu {
     width: 100%;
@@ -495,10 +499,10 @@ body {
     margin: 10px 0 40px 180px;
     padding: 10px 20px;
     font-size: 14px;
-    color: #F0ECE5;
+    color: #21201f;
     background-color: transparent;
     text-decoration: none;
-    border: 2px solid #F0ECE5;
+    border: 2px solid #21201f;
     border-radius: 8px;
     position: relative;
     overflow: hidden;
