@@ -135,7 +135,6 @@ body {
 
 .content h2 {
     font-weight: 400;
-    font-size: large;
 }
 
 .content h1.name {
@@ -609,40 +608,21 @@ ul li {
     margin-right: 20px; /* Increase space between arrow and text */
 }
 
-/* Resume Section Styles */
-.resume {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 1200px; /* Add max-width to maintain consistency */
-    margin-left: 11%;
-    padding: 20px 0%; /* Dynamic padding with minimum 40px */
-    box-sizing: border-box;
-}
-
-.resume .resumeheader {
+/* Resume Header and Contact Header Styles */
+.resume .resumeheader{
     font-family: Arial, Helvetica, sans-serif;
     color: #86B6F6;
     font-size: large;
-    width: 100%;
-    margin-bottom: 20px;
+    padding: 0px 0px 0px 150px;
 }
-
-.resume .resumeheader h1 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0;
-}
-
-/* Resume Download Button Styles */
+    
+/* New styles for the download button */
 .resume-download {
     display: inline-flex;
     align-items: center;
-    margin: 10px 0 40px 0;
-    padding: 12px 24px;
-    font-size: 16px;
+    margin: 10px 0 40px 180px;
+    padding: 10px 20px;
+    font-size: 14px;
     color: #21201f;
     background-color: transparent;
     text-decoration: none;
@@ -651,123 +631,120 @@ ul li {
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
-    cursor: pointer;
+}
+
+.resume-download::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.resume-download:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.resume-download img {
+    margin-right: 6px;
+    z-index: 1;
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+}
+
+.resume-download span {
+    z-index: 1;
 }
 
 .resume-download:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
-    background-color: rgba(134, 182, 246, 0.1);
+    box-shadow: 0 4px rgba(255, 255, 255, 0.5);
+    transform: translateY(2px);
 }
 
 /* Contact Section Styles */
 .contact {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 1200px; 
-    margin-left: 11%;
-    padding: 20px 0%; /* Dynamic padding with minimum 40px */
-    box-sizing: border-box;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center align content horizontally */
+    padding: 20px 0; /* Add padding to the section */
 }
 
 .contact .getintouch {
     font-family: Arial, Helvetica, sans-serif;
     color: #86B6F6;
     font-size: large;
-    width: 100%;
-    margin-bottom: 20px;
+    padding: 0px 0px 0px 150px; /* Adjust as needed */
+    text-align: left; /* Left align the header text */
+    width: 100%; /* Ensure header takes full width */
+    margin-bottom: 20px; /* Add space below the header */
 }
 
-.contact .getintouch h1 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0;
-}
-
-/* Contact Links Styles */
+/* Styles for the links under getintouch */
 .contact .links {
-    width: 100%;
+    padding: 0 150px; /* Adjust as needed */
 }
 
 .contact .links ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: flex; /* Arrange items in a row */
+    justify-content: center; /* Center align items horizontally */
 }
 
 .contact .links ul li {
-    margin: 0;
+    margin: 0 10px; /* Adjust spacing between items */
 }
 
 .contact .links ul li a {
-    display: flex;
-    align-items: center;
+    display: flex; /* Ensure icons are displayed inline */
+    align-items: center; /* Center align items vertically */
     color: #F0ECE5;
     text-decoration: none;
     font-size: large;
-    transition: transform 0.3s ease;
 }
 
 .contact .links ul li a:hover {
-    transform: translateY(-3px);
+    text-decoration: underline;
 }
 
-/* Lord Icon specific styles */
-lord-icon {
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
 
-lord-icon:hover {
-    transform: scale(1.1);
-}
 
-/* Bottom copyright section */
-.bottom {
-    width: 100%;
-    text-align: center;
-    margin-top: 40px;
-    color: black;
-    font-size: 14px;
-    padding: 20px 0;
-}
 
-/* Media Queries for Responsive Design */
+
+
+
+/* Media Queries */
 @media screen and (max-width: 768px) {
-    .resume,
-    .contact {
-        padding: 20px 30px; /* Slightly smaller padding on mobile */
+    .sidebar {
+        display: none;
     }
-    
-    .resume-download {
-        padding: 10px 20px;
-        font-size: 14px;
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    
-    .contact .links ul {
-        gap: 20px;
+
+    .nav_list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-container {
+        width: calc(100% - 20px); /* Adjust the width for mobile view */
     }
 }
 
-@media screen and (max-width: 480px) {
-    .resume,
-    .contact {
-        padding: 20px 20px; /* Even smaller padding on very small screens */
-    }
-    
-    .resume-download {
-        padding: 8px 16px;
-        font-size: 13px;
-    }
-    
-    .contact .links ul {
-        gap: 15px;
+@media screen and (max-width: 1024px) {
+    .container_edu, .container_skills {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 20px; /* Reduce gap between sections */
+        padding: 20px; /* Adjust padding */
     }
 }
